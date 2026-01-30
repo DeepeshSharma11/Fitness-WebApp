@@ -8,30 +8,40 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
 
+    <!-- Favicon -->
     <link href="{{ url_for('static', filename='img/favicon.ico') }}" rel="icon">
 
+    <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
 
+    <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
+    <!-- Libraries Stylesheet -->
     <link href="{{ url_for('static', filename='lib/animate/animate.min.css') }}" rel="stylesheet">
     <link href="{{ url_for('static', filename='lib/lightbox/css/lightbox.min.css') }}" rel="stylesheet">
     <link href="{{ url_for('static', filename='lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
 
+    <!-- Customized Bootstrap Stylesheet -->
     <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
 
+    <!-- Template Stylesheet -->
     <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Spinner Start -->
     <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only">Loading...</span>
         </div>
     </div>
+    <!-- Spinner End -->
+
+    <!-- Header Start -->
     <div class="container-fluid p-0">
         <nav class="navbar navbar-expand-lg navbar-dark px-lg-5">
             <a href="{{ url_for('index') }}" class="navbar-brand ms-4 ms-lg-0">
@@ -50,13 +60,13 @@
                         <div class="dropdown-menu m-0">
                             <a href="{{ url_for('team') }}" class="dropdown-item active">Our Models</a>
                             <a href="{{ url_for('testimonial') }}" class="dropdown-item">Testimonial</a>
-                            <a href="404.html" class="dropdown-item">404 Page</a>
+                            <a href="#" class="dropdown-item">404 Page</a>
                         </div>
                     </div>
                     <a href="{{ url_for('contact') }}" class="nav-item nav-link">Contact</a>
                 </div>
                 <div class="d-none d-lg-flex">
-                    <a class="btn btn-outline-primary border-2" href="https://htmlcodex.com/downloading/?item=3631">Buy Pro Version</a>
+                    <a class="btn btn-outline-primary border-2" href="#">Buy Pro Version</a>
                 </div>
             </div>
         </nav>
@@ -74,6 +84,9 @@
             </div>
         </div>
     </div>
+    <!-- Header End -->
+
+    <!-- Team Start -->
     <div class="container-fluid py-5 bg-secondary">
         <div class="container py-5">
             <div class="text-center">
@@ -85,6 +98,7 @@
                 </div>
             </div>
             <div class="row g-4">
+                <!-- Model 1 -->
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item">
                         <div class="team-body">
@@ -96,7 +110,7 @@
                                 <span>Waist</span>
                                 <span>Hips</span>
                             </div>
-                            <img class="img-fluid" src="{{ url_for('static', filename='img/team-1.jpg') }}" alt="">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/team-1.jpg') }}" alt="Model 1">
                             <div class="team-after">
                                 <span>22</span>
                                 <span>185</span>
@@ -111,6 +125,7 @@
                         </a>
                     </div>
                 </div>
+                <!-- Model 2 -->
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item">
                         <div class="team-body">
@@ -122,7 +137,7 @@
                                 <span>Waist</span>
                                 <span>Hips</span>
                             </div>
-                            <img class="img-fluid" src="{{ url_for('static', filename='img/team-2.jpg') }}" alt="">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/team-2.jpg') }}" alt="Model 2">
                             <div class="team-after">
                                 <span>22</span>
                                 <span>185</span>
@@ -137,6 +152,7 @@
                         </a>
                     </div>
                 </div>
+                <!-- Model 3 -->
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item">
                         <div class="team-body">
@@ -148,7 +164,7 @@
                                 <span>Waist</span>
                                 <span>Hips</span>
                             </div>
-                            <img class="img-fluid" src="{{ url_for('static', filename='img/team-3.jpg') }}" alt="">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/team-3.jpg') }}" alt="Model 3">
                             <div class="team-after">
                                 <span>22</span>
                                 <span>185</span>
@@ -163,6 +179,7 @@
                         </a>
                     </div>
                 </div>
+                <!-- Model 4 -->
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="team-item">
                         <div class="team-body">
@@ -174,7 +191,7 @@
                                 <span>Waist</span>
                                 <span>Hips</span>
                             </div>
-                            <img class="img-fluid" src="{{ url_for('static', filename='img/team-4.jpg') }}" alt="">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/team-4.jpg') }}" alt="Model 4">
                             <div class="team-after">
                                 <span>22</span>
                                 <span>185</span>
@@ -189,6 +206,7 @@
                         </a>
                     </div>
                 </div>
+                <!-- Model 5 -->
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item">
                         <div class="team-body">
@@ -200,7 +218,7 @@
                                 <span>Waist</span>
                                 <span>Hips</span>
                             </div>
-                            <img class="img-fluid" src="{{ url_for('static', filename='img/team-5.jpg') }}" alt="">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/team-5.jpg') }}" alt="Model 5">
                             <div class="team-after">
                                 <span>22</span>
                                 <span>185</span>
@@ -215,6 +233,7 @@
                         </a>
                     </div>
                 </div>
+                <!-- Model 6 -->
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item">
                         <div class="team-body">
@@ -226,7 +245,7 @@
                                 <span>Waist</span>
                                 <span>Hips</span>
                             </div>
-                            <img class="img-fluid" src="{{ url_for('static', filename='img/team-6.jpg') }}" alt="">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/team-6.jpg') }}" alt="Model 6">
                             <div class="team-after">
                                 <span>22</span>
                                 <span>185</span>
@@ -241,6 +260,7 @@
                         </a>
                     </div>
                 </div>
+                <!-- Model 7 -->
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item">
                         <div class="team-body">
@@ -252,7 +272,7 @@
                                 <span>Waist</span>
                                 <span>Hips</span>
                             </div>
-                            <img class="img-fluid" src="{{ url_for('static', filename='img/team-7.jpg') }}" alt="">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/team-7.jpg') }}" alt="Model 7">
                             <div class="team-after">
                                 <span>22</span>
                                 <span>185</span>
@@ -267,6 +287,7 @@
                         </a>
                     </div>
                 </div>
+                <!-- Model 8 -->
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="team-item">
                         <div class="team-body">
@@ -278,7 +299,7 @@
                                 <span>Waist</span>
                                 <span>Hips</span>
                             </div>
-                            <img class="img-fluid" src="{{ url_for('static', filename='img/team-8.jpg') }}" alt="">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/team-8.jpg') }}" alt="Model 8">
                             <div class="team-after">
                                 <span>22</span>
                                 <span>185</span>
@@ -296,6 +317,9 @@
             </div>
         </div>
     </div>
+    <!-- Team End -->
+
+    <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer py-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center py-5">
             <a href="{{ url_for('index') }}">
@@ -307,14 +331,16 @@
                 <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-youtube"></i></a>
                 <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-linkedin-in"></i></a>
             </div>
-            <p>&copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.</p>
-
+            <p>&copy; <a class="border-bottom" href="{{ url_for('index') }}">Poseify</a>, All Right Reserved.</p>
             <p class="mb-0">Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a></p>
         </div>
     </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
     <a href="#" class="btn btn-outline-primary border-2 btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-
+    <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="{{ url_for('static', filename='lib/wow/wow.min.js') }}"></script>
@@ -323,6 +349,7 @@
     <script src="{{ url_for('static', filename='lib/owlcarousel/owl.carousel.min.js') }}"></script>
     <script src="{{ url_for('static', filename='lib/lightbox/js/lightbox.min.js') }}"></script>
 
+    <!-- Template Javascript -->
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
 
