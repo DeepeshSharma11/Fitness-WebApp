@@ -9,7 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="{{ url_for('static', filename='img/favicon.ico') }}" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,15 +21,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='lib/animate/animate.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='lib/lightbox/css/lightbox.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
 </head>
 
 <body>
@@ -123,7 +123,7 @@
                     </div>
                 </div>
                 <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.5s">
-                    <img class="img-fluid" src="img/about.png" alt="">
+                    <img class="img-fluid" src="{{ url_for('static', filename='img/about.png') }}" alt="">
                 </div>
             </div>
         </div>
@@ -177,7 +177,7 @@
                                 <span>Waist</span>
                                 <span>Hips</span>
                             </div>
-                            <img class="img-fluid" src="img/team-1.jpg" alt="">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/team-1.jpg') }}" alt="">
                             <div class="team-after">
                                 <span>22</span>
                                 <span>185</span>
@@ -203,7 +203,7 @@
                                 <span>Waist</span>
                                 <span>Hips</span>
                             </div>
-                            <img class="img-fluid" src="img/team-2.jpg" alt="">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/team-2.jpg') }}" alt="">
                             <div class="team-after">
                                 <span>22</span>
                                 <span>185</span>
@@ -229,7 +229,7 @@
                                 <span>Waist</span>
                                 <span>Hips</span>
                             </div>
-                            <img class="img-fluid" src="img/team-3.jpg" alt="">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/team-3.jpg') }}" alt="">
                             <div class="team-after">
                                 <span>22</span>
                                 <span>185</span>
@@ -255,7 +255,7 @@
                                 <span>Waist</span>
                                 <span>Hips</span>
                             </div>
-                            <img class="img-fluid" src="img/team-4.jpg" alt="">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/team-4.jpg') }}" alt="">
                             <div class="team-after">
                                 <span>22</span>
                                 <span>185</span>
@@ -281,7 +281,7 @@
                                 <span>Waist</span>
                                 <span>Hips</span>
                             </div>
-                            <img class="img-fluid" src="img/team-5.jpg" alt="">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/team-5.jpg') }}" alt="">
                             <div class="team-after">
                                 <span>22</span>
                                 <span>185</span>
@@ -307,7 +307,7 @@
                                 <span>Waist</span>
                                 <span>Hips</span>
                             </div>
-                            <img class="img-fluid" src="img/team-6.jpg" alt="">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/team-6.jpg') }}" alt="">
                             <div class="team-after">
                                 <span>22</span>
                                 <span>185</span>
@@ -333,7 +333,7 @@
                                 <span>Waist</span>
                                 <span>Hips</span>
                             </div>
-                            <img class="img-fluid" src="img/team-7.jpg" alt="">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/team-7.jpg') }}" alt="">
                             <div class="team-after">
                                 <span>22</span>
                                 <span>185</span>
@@ -359,7 +359,7 @@
                                 <span>Waist</span>
                                 <span>Hips</span>
                             </div>
-                            <img class="img-fluid" src="img/team-8.jpg" alt="">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/team-8.jpg') }}" alt="">
                             <div class="team-after">
                                 <span>22</span>
                                 <span>185</span>
@@ -394,7 +394,7 @@
             </div>
             <p>&copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.</p>
 
-            <!--/*** The author’s attribution link must remain intact in the template. ***/-->
+            <!--/*** The author's attribution link must remain intact in the template. ***/-->
             <!--/*** If you wish to remove this credit link, please purchase the Pro Version . ***/-->
             <p class="mb-0">Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a></p>
         </div>
@@ -409,14 +409,14 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="{{ url_for('static', filename='lib/wow/wow.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/easing/easing.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/waypoints/waypoints.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/owlcarousel/owl.carousel.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/lightbox/js/lightbox.min.js') }}"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
 
 </html>
