@@ -10,23 +10,33 @@ def index():
 def about():
     return render_template('about.html')
 
+@app.route('/services')
+def service():
+    return render_template('service.html')
 
+@app.route('/models')
+def team():
+    return render_template('team.html')
+
+@app.route('/testimonials')
+def testimonial():
+    return render_template('testimonial.html')
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
-        # Handle login form submission
-        # You can add your login logic here
         return redirect(url_for('index'))
     return render_template('login.html')
 
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
     if request.method == 'POST':
-        # Handle contact form submission
-        # You can add your contact logic here
         return redirect(url_for('index'))
     return render_template('contact.html')
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
 
 if __name__ == '__main__':
     app.run(debug=True)
